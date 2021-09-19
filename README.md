@@ -7,6 +7,7 @@ Demo application containing two microservices, postgres and docker.
 Execute from /src folder
 
 docker-compose build
+
 docker-compose up
 
 ## Services
