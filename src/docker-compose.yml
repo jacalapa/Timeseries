@@ -1,0 +1,23 @@
+services:
+  timeseries:
+    build:
+      context: .
+      dockerfile: ./docker-timeseries
+    ports:
+      - 7771:80
+  
+  calculation:
+    build:
+      context: .
+      dockerfile: ./docker-calculation
+    ports:
+      - 7772:80
+
+  postgres_image:
+    image: "postgres:13"
+    ports:
+      - "5432"
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
