@@ -1,13 +1,15 @@
 # Timeseries
 
-# Installation
+Demo application containing two microservices, postgres and docker.
+
+## Installation
 
 Execute from /src folder
 
 docker-compose build
 docker-compose up
 
-# Services
+## Services
 
 1. Timeseries.API
 http://host.docker.internal:7771/swagger/v1/swagger.json
