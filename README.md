@@ -1,11 +1,13 @@
 # Timeseries
 
-#Installation
+# Installation
 
-`docker-compose build`
-`docker-compose up`
+Execute from /src folder
 
-#Services
+docker-compose build
+docker-compose up
+
+# Services
 
 1. Timeseries.API
 http://host.docker.internal:7771/swagger/v1/swagger.json
